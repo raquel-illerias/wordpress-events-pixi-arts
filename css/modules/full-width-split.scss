@@ -1,0 +1,27 @@
+.full-width-split {
+  background-color: $beige;
+
+  &__one {
+    background-color: $beige;
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+
+  }
+
+  &__two {
+    background-color: $beige;
+    
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+  }
+
+  &__inner {
+    @media (min-width: 1350px) {
+      width: 610px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.site-footer {
+  width: 100%;
+  padding: 2rem 0 3.5rem 0;
+  background-color: #fdf4feac;
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .headline {
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+
+  &__inner {
+    padding-top: 3.5rem;
+  }
+
+  &__col-one {
+    text-align: center;
+    @include atMedium {
+      text-align: left;
+      width: 33%;
+      float: left;
+    }
+  }
+
+  &__col-two-three-group {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    @include atMedium {
+      text-align: left;
+      float: left;
+      width: 42%;
+      margin: 0;
+    }
+  }
+
+  &__col-two {
+    width: 50%;
+    float: left;
+  }
+  &__col-three {
+    width: 50%;
+    float: left;
+  }
+  &__col-four {
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    @include atMedium {
+      padding-top: 0;
+      margin: 0;
+      clear: none;
+      text-align: center;
+      width: 25%;
+      float: right;
+    }
+  }
+}
